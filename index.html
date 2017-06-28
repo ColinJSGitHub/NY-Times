@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>New York Times Search- Week 7 Homework</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="nytimes.js"></script>
+
+
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="jumbotron" id="headline"><span class="glyphicon glyphicon-list"></span>New York Times Search</div>
+
+		<div>
+	    	<div class="panel panel-primary">
+	          <div class="panel-heading">
+	            <h3 class="panel-title">Search Parameters (All Fields must be populated!)</h3>
+	          </div>
+	          <div class="panel-body">
+
+					<form class="form-group">
+						<label>Search Term:</label>
+						<br>
+						<input id="searchTerm" type="text" name="searchText" placeholder="Search">
+						<br>
+						<label>Number of Records to Retrieve:</label>
+						<br>
+						<input type="text" name="number" id="numberOfRecordsToRetrieve">
+						<br>
+						<label>Start Year(YYYYMMDD Format):</label>
+						<br>
+						<input id="startYear" type="text" name="sYear">
+						<br>
+						<label>End Year(YYYYMMDD Format):</label>
+						<br>
+						<input id="endYear" type="text" name="eYear">
+						<br>
+						<button id="search" type="search" class="bn btn-default"><span class="glyphicon glyphicon-send"></span>Search</button>
+						<button id="clearResults" class="bn btn-default"><span class="glyphicon glyphicon-trash"></span>Clear</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+
+
+		<div>
+	    	<div class="panel panel-primary">
+	          <div class="panel-heading">
+	            <h3 class="panel-title">Top Articles</h3>
+	          </div>
+        	<div class="panel-body" id="topArticles">
+
+        	</div>
+    		</div>
+    	</div>
+
+
+	</div>
+
+</body>
+</html>
